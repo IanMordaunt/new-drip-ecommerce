@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 // import { coffeeEquipment } from "../data";
 import Product from "./Product";
@@ -12,7 +12,8 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 
-function Products({ cat, filters, sort }) {
+const Products = ({ cat, filters, sort }) => {
+
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
@@ -24,6 +25,7 @@ function Products({ cat, filters, sort }) {
             ? `http://localhost:3000/api/products?category=${cat}`
             : "http://localhost:3000/api/products"
         );
+     
         setProducts(res.data);
       } catch (err) {}
     };
