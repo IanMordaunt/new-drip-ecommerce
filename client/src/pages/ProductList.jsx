@@ -1,13 +1,13 @@
 import React from "react";
+import styled from "styled-components";
+import Navbar from "../components/Navbar";
+import Announcement from "../components/Announcement";
+import Products from "../components/Products";
+import Newsletter from "../components/Newsletter";
+import Footer from "../components/Footer";
+import { mobile } from "../responsive";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
-import styled from "styled-components";
-import Announcement from "../components/Announcement";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import Newsletter from "../components/Newsletter";
-import Products from "../components/Products";
-import { mobile } from "../responsive";
 
 const Container = styled.div``;
 
@@ -41,10 +41,7 @@ const Option = styled.option``;
 const ProductList = () => {
   const location = useLocation();
   const cat = location.pathname.split("/")[2];
-
   const [filters, setFilters] = useState({});
-  const [filters, setFilters] = useState({})
-
   const [sort, setSort] = useState("newest");
 
   const handleFilters = (e) => {
