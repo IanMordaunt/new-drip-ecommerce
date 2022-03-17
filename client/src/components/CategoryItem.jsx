@@ -52,6 +52,7 @@ function CategoryItem({ item }) {
         </Info>
       </Link>
     </Container>
+   
   );
 }
 

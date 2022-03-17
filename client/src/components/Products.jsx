@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 // import { coffeeEquipment } from "../data";
 import Product from "./Product";
@@ -24,6 +24,7 @@ const Products = ({ cat, filters, sort }) => {
             ? `http://localhost:3000/api/products?category=${cat}`
             : "http://localhost:3000/api/products"
         );
+     
         setProducts(res.data);
       } catch (err) {}
     };
