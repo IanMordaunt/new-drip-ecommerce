@@ -12,7 +12,7 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 
-function Products({ cat, filters, sort }) {
+const Products = ({ cat, filters, sort }) => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
