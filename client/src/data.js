@@ -85,6 +85,7 @@ export const products = [
     title: "Honduras Cidra",
     desc: "test",
     categories: "coffeebeans",
+    roast: "light",
     quantity: "16oz",
     price: 24,
   },

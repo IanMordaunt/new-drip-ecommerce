@@ -21,6 +21,12 @@ const ProductSchema = new mongoose.Schema(
         quantity: {
             type: Array,
         },
+        roast: {
+            type: Array
+        },
+        region: {
+            type: Array,
+        },
         price: {
             type: Number,
             required: true,

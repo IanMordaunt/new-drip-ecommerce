@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom"
 import { mobile } from "../responsive";
+
+
 const Container = styled.div`
   flex: 1;
   margin: 3px;
