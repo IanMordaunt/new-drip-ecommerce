@@ -4,6 +4,7 @@ import styled from "styled-components";
 // import { coffeeEquipment } from "../data";
 import Product from "./Product";
 import axios from "axios";
+// import { favoriteProducts } from "../data"
 
 const Container = styled.div`
   padding: 20px;
