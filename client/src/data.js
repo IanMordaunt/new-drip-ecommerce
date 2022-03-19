@@ -25,21 +25,21 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: "https://cdn.shopify.com/s/files/1/0087/6606/2639/products/image_2_20_f5fb74c1-fc47-4f1b-8bea-166d3a5d8efb_550x825.png?v=1642534126",
+    img: "https://d5sfc28k52zpm.cloudfront.net/wp-content/uploads/2022/02/Lugmapata-Ecuador-1.jpg",
     title: "SMALL BATCH ROASTED COFFEE",
-    cat: "coffeebeans",
+    cat: "Coffee-Beans",
   },
   {
     id: 2,
     img: "https://cdn.shopify.com/s/files/1/0057/6235/1219/products/Stagg-XF-Pour-Over-Set-01_900x.png?v=1634841835",
     title: "COFFEE EQUIPMENT",
-    cat: "equipment",
+    cat: "Equipment",
   },
   {
     id: 3,
     img: "https://cdn.shopify.com/s/files/1/1707/3261/products/KEETUN-05982_1200x.jpg?v=1622828597",
     title: "MERCHANDISE",
-    cat: "merchandise",
+    cat: "Merchandise",
   },
 ];
 

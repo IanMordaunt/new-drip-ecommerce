@@ -170,8 +170,8 @@ const Product = () => {
         <FilterContainer>
           <Filter>
             <FilterTitle>Roast</FilterTitle>
-            {product.roast?.map((c) => (
-              <FilterRoast roast={c} key={c} onClick={() => setRoast(c)} />
+            {product.roast?.map((r) => (
+              <FilterRoast roast={r} key={r} onClick={() => setRoast(r)} />
             ))}
           </Filter>
           <Filter>
