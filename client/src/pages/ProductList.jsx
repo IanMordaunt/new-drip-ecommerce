@@ -46,10 +46,18 @@ const ProductList = () => {
 
   const handleFilters = (e) => {
     const value = e.target.value;
+    if( value === "Roast"){
+      window.location.reload();
+
+    }else if( value === "Region") {
+      window.location.reload();
+
+  }else {
     setFilters({
       ...filters,
       [e.target.name]: value,
     });
+  }
   };
 
   return (
@@ -61,14 +69,14 @@ const ProductList = () => {
         <Filter>
           <FilterText>Filter Coffee:</FilterText>
           <Select name="roast" onChange={handleFilters}>
-            <Option disabled>Roast</Option>
+            <Option>Roast</Option>
             <Option>light</Option>
             <Option>medium</Option>
             <Option>dark</Option>
             <Option>espresso</Option>
           </Select>
           <Select name="region" onChange={handleFilters}>
-            <Option disabled>Region</Option>
+            <Option>Region</Option>
             <Option>Central America</Option>
             <Option>South America</Option>
             <Option>Africa</Option>
